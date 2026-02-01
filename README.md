@@ -1,43 +1,114 @@
-# Chirpy Starter
+# JYK Lab – Vision & Agent-based Robotics Automation
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+This repository hosts my personal engineering log and portfolio site:
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+➡ https://JYKai.github.io
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+I document real-world failures and recovery processes in **vision-guided robotic automation systems** and explore **agent-based workflows** for reliable operation.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+---
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+## Who I am
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+I am Jiyun Kim (JYK), an engineer focusing on:
 
-## Usage
+- vision-guided robotic manipulation
+- ROS2-based system integration
+- failure-aware automation design
+- agentic workflows using LLMs (LangChain / LangGraph)
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+My background includes:
+- M.S. in Computer Vision / AI
+- hands-on robotics system integration in real environments
+- multi-agent workflow design for industrial automation
 
-## Contributing
+---
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## What this site is about
+
+This site is not a tutorial blog.
+
+It is a **field engineering log** that focuses on:
+
+- what actually fails in real robotic systems
+- how those failures were diagnosed
+- what was changed
+- and what finally worked
+
+Every post aims to be:
+- reproducible
+- environment-specific
+- and grounded in real execution
+
+---
+
+## Main topics
+
+- Vision-guided picking and manipulation (YOLO → 3D pose → grasp)
+- Camera–robot calibration and coordinate transforms (TF, hand–eye)
+- ROS2 navigation and mobile robots (TurtleBot3, Nav2)
+- MoveIt2 motion planning and execution
+- Failure analysis and recovery strategies
+- Agent-based experiment orchestration and reporting (LangChain / LangGraph)
+
+---
+
+## Current projects
+
+### 1. Vision-guided robotic picking PoC
+- object detection with YOLO
+- depth-based 3D target localization
+- hand–eye calibration
+- grasp execution and failure logging
+
+### 2. ROS2 navigation practice with TurtleBot3
+- localization and mapping
+- TF debugging
+- parameter tuning under real sensor noise
+
+### 3. Video / lecture Q&A agent
+- video URL or file ingestion
+- transcript / STT processing
+- question answering with timestamp references
+- built using LangChain and LangGraph
+
+---
+
+## Why I publish failures
+
+In automation systems, performance metrics alone are not enough.
+
+What matters in real deployments is:
+
+- how systems fail
+- how often they fail
+- and how quickly they recover
+
+This repository and blog focus on building
+**failure-aware and recovery-oriented automation systems.**
+
+---
+
+## Contact
+
+If you are interested in collaboration, automation PoCs, or technical discussions:
+
+- GitHub: https://github.com/JYKai
+- Email: noahyun1222@gmail.com
+
+---
+
+## Tech stack
+
+- ROS2 (Jazzy)
+- OpenCV / PyTorch
+- AI Vision
+- LangChain / LangGraph
+- Python
+- Linux (Ubuntu 24.04)
+
+---
 
 ## License
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+The content of this repository is published under the MIT License unless otherwise stated.
